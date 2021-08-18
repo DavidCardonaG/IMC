@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>IMC</title>
+</head>
+
+<body>
+
+    <h1>CALCULADORA DE IMC</h1>
+    
+    <div class="card">
+        <img id="image"
+            src="https://us.123rf.com/450wm/igorrita/igorrita1507/igorrita150700024/42584408-car%C3%A1cter-inconformista-plana-chico-joven-con-estilo-con-gafas-avatar-icono-ilustraci%C3%B3n-vectorial-hom.jpg?ver=6"
+            alt="hombre">
+        <div class="container">
+            <h2 id="name">HOMBRES</h2>
+        </div>
+    </div>
+    <div class="card">
+    <img id="image"
+        src="https://img.freepik.com/vector-gratis/diseno-ilustracion-vector-personaje-avatar-mujer-joven_24877-18520.jpg?size=338&ext=jpg"
+        alt="mujer">
+    <div class="container">
+        <h2 id="name"> MUJERES</h2>
+    </div>
+    </div>
+    <form id="formulario" onsubmit="calcularIMC(); return false">
+        <label for="nombre">Escribe tu NOMBRE:</label>
+        <input type="text" id="nombre">
+        <br>
+        <label for="altura">Escribe tu ALTURA actual (cm):</label>
+        <input type="text" id="altura" required="required">
+        <br>
+        <label for="peso">Escribe tu PESO actual (kg):</label>
+        <input type="text" id="peso" required="required">
+        <br>
+        <button class="submit-button" type="submit">Calcular IMC</button>
+        <p id="resultado"></p>
+    </form>
+
+
+
+
+    <div class="row" id="items"></div>
+
+
+    <div id="main"></div>
+
+    <div id="resultado"></div>
+
+    <canvas id="myChart" width="400" height="400"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./script/script.js"></script>
+    <script type="module" src="./script/app.js"></script>
+</body>
+
+</html>
